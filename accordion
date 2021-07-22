@@ -1,0 +1,14 @@
+
+
+	// Accordion
+	$( '.title' ).click( function ( e ) {
+        e.preventDefault();
+        $('.content').not($( this ).next()).slideUp('fast');
+        $( '.title' ).not($( this )).removeClass( 'open' );
+        $( this).toggleClass( 'open' );
+        $( this ).next().slideToggle( 'fast' );
+        $( this ).parent().toggleClass( 'open' );
+        $( this ).parent().siblings().removeClass( 'open' );
+        $( this ).parent().siblings().children( '.content' ).removeClass( 'open' );
+        $( this ).parent().siblings().children( '.content' ).slideUp( 'fast' );
+    } );	
