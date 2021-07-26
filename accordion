@@ -1,5 +1,4 @@
 
-
 	// Accordion
 	$( '.title' ).click( function ( e ) {
         e.preventDefault();
@@ -11,4 +10,4 @@
         $( this ).parent().siblings().removeClass( 'open' );
         $( this ).parent().siblings().children( '.content' ).removeClass( 'open' );
         $( this ).parent().siblings().children( '.content' ).slideUp( 'fast' );
-    } );	
+    } );
